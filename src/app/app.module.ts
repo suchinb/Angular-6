@@ -3,10 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { DashboardComponent } from './dashboard';
+import { SideNavigationComponent } from './side-navigation';
+import { ReactiveformComponent } from './reactiveform';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    DashboardComponent,
+    SideNavigationComponent,
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,

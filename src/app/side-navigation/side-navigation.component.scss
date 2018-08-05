@@ -1,0 +1,24 @@
+@import 'src/sass/_variables';
+
+.sidebar-item {
+    display: block;
+    line-height: 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0 0.2em 0 0.5em;
+    word-break: break-all;
+}
+.sidebar-item:hover{
+    background-color: #dbdbdb;
+}
+
+.sidebar-item__active{
+    color: $active-font-color;
+}
+a {
+    text-decoration: none;
+    color: $font-color;
+}
+a:hover{
+    color: $active-font-color;
+}

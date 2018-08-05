@@ -1,0 +1,30 @@
+@import 'src/sass/variables';
+
+.header{
+    background-color: $active-font-color;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    padding: 1em 0;
+    h1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .menu__right{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.content {
+    display: flex;
+    min-height: 90vh;
+}
+
+.side-nav{
+    width: 20%;
+    padding-top: 2em;
+    border-right: solid 1px #eee;
+
+}
