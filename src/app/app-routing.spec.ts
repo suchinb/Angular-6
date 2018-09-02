@@ -7,7 +7,7 @@ import { DashboardComponent } from './dashboard';
 import { SideNavigationComponent } from './side-navigation';
 import { routes } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveformComponent } from './reactiveform';
+// import { ReactiveformComponent } from './reactiveform';
 
 describe('Routing: App', () => {
   let location: Location;
@@ -19,8 +19,7 @@ describe('Routing: App', () => {
       declarations: [
         AppComponent,
         SideNavigationComponent,
-        DashboardComponent,
-        ReactiveformComponent
+        DashboardComponent
       ]
     }).compileComponents();
   }));
@@ -55,9 +54,9 @@ describe('Routing: App', () => {
       expect(location.path()).toBe('/dashboard');
     });
   }));
-  it('Should redirect to reactiveform', fakeAsync(() => {
-    router.navigate(['/reactiveform']).then(() => {
-      expect(location.path()).toBe('/reactiveform');
-    });
-  }));
+  // it('Should redirect to reactiveform', fakeAsync(() => {
+  //   router.navigate(['/reactiveform']).then(() => {
+  //     expect(location.path()).toBe('/reactiveform');
+  //   });
+  // }));
 });

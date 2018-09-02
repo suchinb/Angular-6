@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard';
 import { SideNavigationComponent } from './side-navigation';
-import { ReactiveformComponent } from './reactiveform';
+// import { RactiveformModule } from './ractiveform/ractiveform.module';
+// import { SearchModule } from './search/search.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DashboardComponent,
-    SideNavigationComponent,
-    ReactiveformComponent
+    SideNavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+    // RactiveformModule,
+    // SearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
